@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from './components/Header';
 import Modal from './components/Modal';
+import logo from './assets/logo.png';
 
 import NewTask from './components/NewTask';
 import TaskControl from './components/TaskControl';
@@ -52,6 +53,7 @@ function App() {
       )}
       <Header />
       <main>
+        <img src={logo} alt="A list" />
         <TaskControl
           onStartAddTask={startAddTaskHandler}
           onSetFilter={setFilterHandler}
